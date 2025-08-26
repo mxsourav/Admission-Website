@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 12px;
+      margin: 20px;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('university-removebg-preview.png') center center no-repeat;
+      background-size: 600px;
+      opacity: 0.03;
+      z-index: -1;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      height: 80px;
+    }
+
+    .header-text {
+      background: #d8d8d8;
+      border-radius: 10px;
+      padding: 10px;
+      margin-left: 10px;
+      flex-grow: 1;
+    }
+
+    .header-text h2 {
+      margin: 0;
+      color: #0046b8;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .header-text p {
+      font-size: 16px;
+      margin: 2px;
+      text-align: center;
+    }
+
+    .photo-box {
+      float: right;
+      border: 1px solid black;
+      padding: 6px;
+      width: 170px;
+      text-align: left;
+      font-size: 10px;
+    }
+
+    .photo-box .photo-area {
+      height: 100px;
+      background-color: #ccc;
+      margin: 5px 0;
+      border: 1px solid #999;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+
+    th, td {
+      padding: 4px;
+      font-size: 11px;
+    }
+
+    input[type=text] {
+      font-size: 11px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <img src="university-removebg-preview.png" alt="Kalinga University Logo" class="logo">
+  <div class="header-text">
+    <h2>KALINGA UNIVERSITY</h2>
+    <p><b>Campus:</b> Kalinga University, Kotni, Near Mantralaya, Naya Raipur - 492101, Chhattisgarh. India.</p>
+    <p><b>E-mail:</b> kalingauniversity1@gmail.com <b>Website:</b> www.kalingauniversity.ac.in</p>
+  </div>
+</div>
+
+<h3 style="text-align: left;"><br>APPLICATION FORM</h3>
+<p>Please fill in BLOCK CAPITAL LETTERS <br></p>
+<p>This form requests a significant amount of personal information. This is required so that we can decide on <br>
+    your suitability for the course you are applying for. The information you provide will be used for this <br> 
+purpose. it will be treated in confidence and will only be seen by those whose job require them to do so.
+</p>
+<div class="photo-box">
+  Paste recent Passport Size Colour Photograph<br><br><br><br><br><br><br><br>
+  
+  <ol style="padding-left: 15px; margin: 0;">
+    <li>Do not use digital or Computerized Picture.</li>
+    <li>Do not Pin or Staple the photograph</li>
+    <li>Do not Sign on the photograph</li>
+  </ol>
+  <br>
+   <p style="text-align: center;"><b>Signature of Candidate</b></p>
+
+  </div>
+  
+
+<div class="form-section">
+  <h4>1. Course title (Code)</h4>
+  <table>
+    <tr>
+      <td>Course Preference I</td>
+      <td><input type="text"></td>
+      <td>Course Preference II</td>
+      <td><input type="text"></td>
+      <td>Course Preference III</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>Session</td>
+      <td><input type="text"></td>
+      <td colspan="2">Lateral Entry / Credit Transfer</td>
+      <td colspan="2"><input type="text"></td>
+    </tr>
+    <tr>
+      <td>Specialization / Elective (If any)</td>
+      <td colspan="5"><input type="text"></td>
+    </tr>
+  </table>
+</div><div class="form-section">
+  <h4>2. Personal Details</h4>
+  <table>
+    <tr>
+      <td>Title</td>
+      <td>
+        <select>
+          <option>Mr.</option>
+          <option>Ms.</option>
+          <option>Mrs.</option>
+          <option>Dr.</option>
+        </select>
+      </td>
+      <td>Gender</td>
+      <td>
+        <select>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </td>
+      <td>Date of Birth</td>
+      <td>
+        <div class="inline-group">
+          <input type="text" class="short-input" placeholder="Day">
+          <input type="text" class="short-input" placeholder="Month">
+          <input type="text" class="short-input" placeholder="Year">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>First Name</td>
+      <td colspan="2"><input type="text"></td>
+      <td>Last Name</td>
+      <td colspan="2"><input type="text"></td>
+    </tr>
+    <tr>
+      <td>Caste</td>
+      <td>
+        <select>
+          <option>General</option>
+          <option>SC</option>
+          <option>ST</option>
+          <option>OBC</option>
+          <option>PH (Physically Handicapped)</option>
+        </select>
+      </td>
+      <td>Marital Status</td>
+      <td colspan="3">
+        <input type="text">
+      </td>
+    </tr>
+    <tr>
+      <td>Permanent Address</td>
+      <td colspan="5"><input type="text"></td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td><input type="text"></td>
+      <td>Post Code</td>
+      <td><input type="text"></td>
+      <td>State</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+     <td>Country</td>
+      <td>
+        <select>
+          <option>India</option>
+          <option>Pakistan</option>
+          <option>BanglaDesh</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Correspondence Address<br>(If different)</td>
+      <td colspan="5"><input type="text"></td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td><input type="text"></td>
+      <td>Post Code</td>
+      <td><input type="text"></td>
+      <td>State</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>Mobile</td>
+      <td><input type="text"></td>
+      <td>STD Code</td>
+      <td><input type="text"></td>
+      <td>Landline</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td colspan="3"><input type="text"></td>
+      <td>Country</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>Passport No.</td>
+      <td><input type="text"></td>
+      <td>Blood Group</td>
+      <td><input type="text"></td>
+      <td>Religion</td>
+      <td><input type="text"></td>
+    </tr>
+  </table>
+</div><div class="form-section">
+  <h4>3. Family Details</h4>
+  <table class="box-table">
+    <tr>
+      <td>
+        <b>Father's Name:</b><br>
+        <input type="text"><br>
+        <b>Address:</b><br>
+        <input type="text"><br>
+        <b>Occupation:</b><br>
+        <input type="text"><br>
+        <b>Name of the Co.:</b><br>
+        <input type="text"><br>
+        <b>Email:</b> <input type="text"> <b>Mob.:</b> <input type="text">
+      </td>
+      <td>
+        <b>Mother's Name:</b><br>
+        <input type="text"><br>
+        <b>Address:</b><br>
+        <input type="text"><br>
+        <b>Occupation:</b><br>
+        <input type="text"><br>
+        <b>Name of the Co.:</b><br>
+        <input type="text"><br>
+        <b>Email:</b> <input type="text"> <b>Mob.:</b> <input type="text">
+      </td>
+    </tr>
+  <br>
+
+<p><b>4. Academic Qualification</b></p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+<tr><th>Level, eg. X, XII, BA, B.Sc., B.Com., M.Com., A Level, O Level, etc.</th><th>Name of the Institute (School, College)</th><th>Name of Board/University</th><th>Passing out Year</th><th>Results (grade or %)</th></tr>
+<tr><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td></tr>
+<tr><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td></tr>
+<tr><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td></tr>
+</table>
+<br>
+
+<p><b>5. Academic Achievements (attach additional sheet(s), if necessary)</b></p>
+Higher Secondary Level (Class I to X), O Level <input type="text" style="width: 400px;"><br>
+Sr. Secondary Level (Class X + 2), A Level <input type="text" style="width: 400px;"><br>
+Graduate/P.G. Level <input type="text" style="width: 400px;"><br>
+Any Other <input type="text" style="width: 400px;"><br>
+<br>
+
+
+<p><b>6. Extra Curricular Activities / Achievements (attach additional sheet(s), if necessary)</b></p>
+Higher Secondary Level (Class I to X), O Level <input type="text" style="width: 400px;"><br>
+Sr. Secondary Level (Class X + 2), A Level <input type="text" style="width: 400px;"><br>
+Graduate/P.G. Level <input type="text" style="width: 400px;"><br>
+<br>
+
+
+<p><b>7. Employment and Work Experience (attach additional sheet(s), if necessary)</b><br>
+Please give details of work experience and employment in reverse chronological order.</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+<tr><th>Name of Organisation</th><th>Designation</th><th>Full Time or Part Time</th><th colspan="2">From</th><th colspan="2">To</th></tr>
+<tr><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td>M <input type="text" style="width:30px;"></td><td>Y <input type="text" style="width:30px;"></td><td>M <input type="text" style="width:30px;"></td><td>Y <input type="text" style="width:30px;"></td></tr>
+<tr><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td>M <input type="text" style="width:30px;"></td><td>Y <input type="text" style="width:30px;"></td><td>M <input type="text" style="width:30px;"></td><td>Y <input type="text" style="width:30px;"></td></tr>
+<tr><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td>M <input type="text" style="width:30px;"></td><td>Y <input type="text" style="width:30px;"></td><td>M <input type="text" style="width:30px;"></td><td>Y <input type="text" style="width:30px;"></td></tr>
+</table>
+<br>
+
+
+<p><b>8. Local Guardian</b></p>
+Name: <input type="text" style="width: 300px;"><br>
+Address: <input type="text" style="width: 300px;"><br>
+Relation: <input type="text" style="width: 150px;"><br>
+<p><b>PLEASE INDICATE HOW YOU HEARD ABOUT THE COURSE (Please tick relevant boxes)</b></p>
+Advertisement <input type="checkbox"> Colleague/Friend <input type="checkbox"> Education Fair <input type="checkbox"><br>
+Internet <input type="checkbox"> Personal enquiry to Kalinga University <input type="checkbox"><br>
+Direct Mail <input type="checkbox"> Other: (Please Specify) <input type="text" style="width: 200px;"><br>
+<br>
+
+
+<p><b>9. Fee Payment:</b> Self Sponsored <input type="checkbox"> Govt. Sponsored <input type="checkbox"> Other <input type="checkbox"></p>
+
+
+<p><b>10. Brother/Sister (s) Details:</b> Does any of your sibling(s) study/studied at KU Yes <input type="checkbox"> No <input type="checkbox"></p>
+<p>If so please provide details: Name <input type="text" style="width: 200px;"> Relationship <input type="text" style="width: 150px;"><br>
+Programme <input type="text" style="width: 200px;"> Year of Admission <input type="text" style="width: 100px;"></p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+<tr><th>Relation</th><th>Name</th><th>Organisation</th><th>Designation</th><th>Mobile</th><th>E-mail</th></tr>
+<tr><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td></tr>
+<tr><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td></tr>
+<tr><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td><td><input type="text" style="width:100%;"></td></tr>
+</table>
+<br>
+
+
+<p><b>11. Facilities Required:</b> Please tick the desired option</p>
+A/C Hostel Room <input type="checkbox"> Non A/C Hostel Room <input type="checkbox"> Two sharing <input type="checkbox"> Four sharing <input type="checkbox"><br>
+
+
+<p><b>12. Transport Required:</b> Campus Transport YES <input type="checkbox"> NO <input type="checkbox"></p>
+
+
+<p><b>13. Languages Known</b></p>
+Read: <input type="text" style="width: 400px;"><br>
+Write: <input type="text" style="width: 400px;"><br>
+Speak: <input type="text" style="width: 400px;"><br>
+<br>
+
+
+<p><b>14. Please tick the areas in which you are good/have performed/have contributed in the past</b></p>
+<table style="width: 100%;">
+<tr><td>1. Public speaking <input type="checkbox"></td><td>15. Teaching <input type="checkbox"></td></tr>
+<tr><td>2. Dramatics <input type="checkbox"></td><td>16. Calligraphy <input type="checkbox"></td></tr>
+<tr><td>3. Singing <input type="checkbox"></td><td>17. Painting <input type="checkbox"></td></tr>
+<tr><td>4. Dance <input type="checkbox"></td><td>18. Art & Craft <input type="checkbox"></td></tr>
+<tr><td>5. Training <input type="checkbox"></td><td>19. Textile Design <input type="checkbox"></td></tr>
+<tr><td>6. Electronics/Robotics <input type="checkbox"></td><td>20. Fashion Design <input type="checkbox"></td></tr>
+<tr><td>7. Computers <input type="checkbox"></td><td>21. Interior Design <input type="checkbox"></td></tr>
+<tr><td>8. Networking <input type="checkbox"></td><td>22. Musical Instruments <input type="checkbox"></td></tr>
+<tr><td>9. Web Design <input type="checkbox"></td><td>23. Swimming <input type="checkbox"></td></tr>
+<tr><td>10. Computer Programming <input type="checkbox"></td><td>24. Music <input type="checkbox"></td></tr>
+<tr><td>11. Athletics <input type="checkbox"></td><td>25. Quiz <input type="checkbox"></td></tr>
+<tr><td>12. Indoor Games <input type="checkbox"></td><td>26. Presentation <input type="checkbox"></td></tr>
+<tr><td>13. Outdoor Games <input type="checkbox"></td><td>27. Debate <input type="checkbox"></td></tr>
+<tr><td>14. Event Organisation <input type="checkbox"></td><td>28. Social Work <input type="checkbox"></td></tr>
+</table>
+
+</body>
+</html>
